@@ -7,7 +7,7 @@ const Navbar = () => {
     setActiveTab(index);
   };
 
-  const tabs = ["Home", "About", "Services", "Portfolio", "Contact"];
+  const tabs = ["Home", "About", "Projects", "Testimonials", "Contact"];
 
   return (
     <nav className="bg-gradient-to-r from-blue-600 to-purple-600 shadow-lg p-4">
