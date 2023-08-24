@@ -1,0 +1,22 @@
+{
+  "name": "stackblitz-starters-kfuu4v",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^10.4.15",
+    "craco": "^0.0.3",
+    "postcss": "^8.4.28",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-scripts": "latest"
+  }
+}
