@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 
 const projects = [
   {
-    title: 'React Modern Portifolio II',
+    title: 'React Modern Portifolio',
     description: 'ReactJS, React Designer & Developer Portfolio',
     demoLink: 'https://example.com/project1',
     repoLink: 'https://github.com/user/project1',
@@ -42,7 +42,8 @@ const Projects = () => {
       <div className="container mx-auto">
         <h2 className="projects-title">Projects</h2>
         <p className="text-center">
-        No cost templates available for utilization. Should you require website design assistance, please <b>get in touch</b> with me!
+          No cost templates available for utilization. Should you require
+          website design assistance, please <b>get in touch</b> with me!
         </p>
         <div className="project-card-container">
           {projects.map((project, index) => (
