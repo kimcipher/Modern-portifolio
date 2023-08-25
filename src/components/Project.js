@@ -19,10 +19,10 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="projects-section"> 
       <div className="container mx-auto">
-        <h2 className="text-2xl font-semibold mb-4">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <h2 className="projects-title">Projects</h2>
+        <div className="project-card-container"> 
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

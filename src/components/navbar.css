@@ -1,0 +1,30 @@
+/* navbar.css */
+.navbar {
+  background: #040D12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  box-shadow: inset;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-item {
+  margin: 0 15px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color:#183D3D;
+  font-size: 12px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #5C8374;
+}
