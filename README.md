@@ -1,5 +1,5 @@
-# Modern-portifolio
+# Contemporary Portfolio
 
-## No cost templates available for use. If you require personal portifolio and you are familiar with either ReactJs, AngularJs, VueJs or NextJs, then these ones are for you.
+## Free Templates Ready for Use. If you're in need of a personal portfolio and you're well-versed in ReactJs, AngularJs, VueJs, or NextJs, then you're in luck.
 
-### The templates only touch on front end technologies, should you require the backend bits of it or a full stack project, Email me!
+### These templates exclusively cover front-end technologies. If you're looking for assistance with the backend components or need a complete full-stack project, don't hesitate to drop me an email!
