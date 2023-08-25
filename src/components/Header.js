@@ -23,7 +23,7 @@ const Header = () => {
             className="header-image"
           />
           <div className="header-text">
-            <h1 className="header-title">John Doe</h1>
+            <h1 className="header-title">Jaffer Kimutai</h1>
             <p className="header-subtitle">{subtitles[subtitleIndex]}</p>
           </div>
         </div>

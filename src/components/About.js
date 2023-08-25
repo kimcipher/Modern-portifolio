@@ -1,16 +1,15 @@
-import React from "react";
-
+import React from 'react';
 
 const About = () => {
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div className="container mx-auto">
-        <h2 className="about-title">About Me</h2> 
-        <p className="about-description">
-          I'm a passionate frontend developer with a focus on creating
-          responsive and user-friendly web applications. I enjoy bringing
-          designs to life using modern web technologies.
-        </p>
+        <h2 className="about-title">About Me</h2>
+        <div className="about-description">
+          I'm an enthusiastic front-end developer who specializes in crafting
+          responsive and user-friendly web applications. My joy lies in transforming
+          designs into reality using contemporary web technologies. Simplicity intertwined with intricacy is my approach.
+        </div>
       </div>
     </section>
   );

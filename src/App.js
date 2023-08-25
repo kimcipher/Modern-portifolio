@@ -8,8 +8,12 @@ import Project from "./components/Project";
 import Contact from "./components/Contact"; 
 import Footer from "./components/Footer";
 import "./style.css"; 
+import "./components/navbar.css"; 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const App = () => (
+  <>
   <div className="bg-primary w-full overflow-hidden">
     <div className={`sm:px-16 px-6 flex justify-center items-center`}>
       <div className={`xl:max-w-[1280px] w-full`}>
@@ -19,10 +23,12 @@ const App = () => (
         <Project />
         <Testimonials />
         <Contact />
-        <Footer />
+        
       </div>
     </div>
   </div>
+  <Footer />
+  </>
 );
 
 export default App;

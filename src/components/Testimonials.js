@@ -4,30 +4,59 @@ import React from "react";
 const testimonials = [
   {
     name: "Jane Doe",
-    content: "John is a talented developer who delivered exceptional work on our project.",
+    content: "Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    imageSrc: "https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=600", 
   },
   {
     name: "Michael Smith",
-    content: "I was impressed by John's attention to detail and problem-solving skills.",
+    content: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem",
+    imageSrc: "https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=600", 
   },
-  // Add more testimonials
+  {
+    name: "Jane Doe",
+    content: " Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+    imageSrc: "https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=600", 
+  },
+  {
+    name: "Michael Smith",
+    content: "Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus.",
+    imageSrc: "https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=600", 
+  },
+
 ];
 
 const Testimonials = () => {
   return (
-    <section className="testimonials-section"> 
+    <section id="testimonials" className="testimonials-section">
       <div className="container mx-auto">
-        <h2 className="testimonials-title">Testimonials</h2> 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="testimonial-card" 
-            >
-              <p className="testimonial-content">{testimonial.content}</p> 
-              <p className="testimonial-name">{testimonial.name}</p>
-            </div>
-          ))}
+        <h2 className="testimonials-title">Testimonials</h2>
+        <div id="testimonialCarousel" className="carousel slide" data-bs-ride="carousel">
+          <div className="carousel-inner">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                <div className="testimonial-card">
+                  <div className="testimonial-content">
+                    <p>{testimonial.content}</p>
+                  </div>
+                  <div className="testimonial-info">
+                    <img
+                      src={testimonial.imageSrc}
+                      alt={`Testimonial from ${testimonial.name}`}
+                    />
+                    <p className="testimonial-name">{testimonial.name}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <button className="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
         </div>
       </div>
     </section>
