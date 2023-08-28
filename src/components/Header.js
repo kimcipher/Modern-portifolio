@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 
-
 const Header = () => {
   const [subtitleIndex, setSubtitleIndex] = useState(0);
   const subtitles = ['Frontend Developer', 'UI/UX Designer', 'Analyst'];
@@ -18,7 +17,7 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <img
-            src="https://images.pexels.com/photos/2287252/pexels-photo-2287252.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src="https://i.ibb.co/x5DYtZ1/DSC-1830.jpg"
             alt="Profile"
             className="header-image"
           />
