@@ -22,7 +22,7 @@ const projects = [
     title: 'VueJS Personal Portifolio',
     description: 'VueJS, Vue UI & UX Designer & Vue Developer',
     demoLink: 'https://example.com/project2',
-    repoLink: 'https://github.com/user/project2',
+    repoLink: 'https://github.com/kimcipher/VueJs-Personal_portifolio.git',
     imageSrc:
       'https://images.pexels.com/photos/3799786/pexels-photo-3799786.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
